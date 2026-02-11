@@ -464,9 +464,9 @@ function createLegendItem(name, data, depth, parentPath) {
     });
   }
 
-  // Legend hover bloom: highlight this category's points on hover
+  // Legend hover bloom: highlight this category's points on hover (desktop only)
   headerEl.addEventListener('mouseenter', () => {
-    if (!showPoints) return; // only in points mode
+    if (!showPoints || window.innerWidth <= 768) return;
     legendHoverCategory = name;
     _hoverDescendantsCacheKey = null; // invalidate cache
     pulseStartTime = performance.now();
