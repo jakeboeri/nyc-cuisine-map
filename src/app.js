@@ -696,5 +696,10 @@ function escapeHtml(text) {
   return div.innerHTML;
 }
 
+// Mobile legend drawer toggle
+document.getElementById('legend-drag-handle').addEventListener('click', () => {
+  document.getElementById('legend').classList.toggle('legend-expanded');
+});
+
 // Start the application
 init();
