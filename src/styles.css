@@ -486,7 +486,7 @@ body {
 
   .legend.legend-expanded .legend-items {
     display: block;
-    max-height: calc(70vh - 140px);
+    max-height: calc(35vh - 140px);
     overflow-y: auto;
   }
 
