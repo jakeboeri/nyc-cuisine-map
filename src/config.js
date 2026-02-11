@@ -10,9 +10,9 @@ export function rgbToHex(rgb) {
 
 // Initial view state centered on NYC
 export const INITIAL_VIEW_STATE = {
-  longitude: -73.98,
-  latitude: 40.75,
-  zoom: 11,
+  longitude: -73.95,
+  latitude: 40.70,
+  zoom: 10,
   pitch: 0,
   bearing: 0,
   minZoom: 9,
