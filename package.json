@@ -1,0 +1,22 @@
+{
+  "name": "nyc-cuisine-map",
+  "version": "1.0.0",
+  "description": "Interactive pointillism map of NYC restaurants by cuisine ethnicity",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "preprocess": "python scripts/preprocess_data.py"
+  },
+  "dependencies": {
+    "@deck.gl/aggregation-layers": "^9.2.6",
+    "@deck.gl/core": "^9.0.0",
+    "@deck.gl/layers": "^9.0.0",
+    "@deck.gl/mapbox": "^9.0.0",
+    "maplibre-gl": "^4.0.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYC Cuisine Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.0.0/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Map container -->
+    <div id="map-container">
+      <div id="map"></div>
+      <canvas id="deck-canvas"></canvas>
+    </div>
+
+    <!-- Legend panel -->
+    <div id="legend" class="legend">
+      <div class="legend-header">
+        <h2>NYC Cuisine Map</h2>
+        <div class="legend-controls">
+          <button id="select-all">All</button>
+          <button id="select-none">None</button>
+        </div>
+        <div class="view-toggles">
+          <button id="toggle-points" class="view-toggle active" title="Show individual restaurant points">
+            <span class="toggle-icon">&#9679;</span> Points
+          </button>
+          <button id="toggle-glow" class="view-toggle" title="Show cuisine heat map">
+            <span class="toggle-icon">&#9728;</span> Glow
+          </button>
+        </div>
+      </div>
+      <div id="legend-items" class="legend-items">
+        <!-- Populated by JavaScript -->
+      </div>
+      <div class="legend-footer">
+        <p id="restaurant-count">Loading...</p>
+      </div>
+    </div>
+
+    <!-- Tooltip (populated dynamically) -->
+    <div id="tooltip" class="tooltip"></div>
+
+    <!-- Loading overlay -->
+    <div id="loading" class="loading">
+      <div class="loading-content">
+        <div class="spinner"></div>
+        <p>Loading restaurant data...</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
